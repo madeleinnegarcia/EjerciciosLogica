@@ -1,5 +1,5 @@
 def anagrama(x, y):
-    if x[::-1] == y or y[::-1] == x:
+    if x[::-1] == y and y[::-1] == x:
         return True
     else:
         return False
