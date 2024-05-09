@@ -1,6 +1,15 @@
-data = "From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008"
-pos = data.find(".")
-print(data[pos : pos + 3])
-print(pos)
+def anagrama(x, y):
+    if x[::-1] == y or y[::-1] == x:
+        return True
+    else:
+        return False
 
-a="madeleinne"
+
+word_1 = input("Ingresa una palabra: ")
+
+word_2 = input("Ingresa una palabra: ")
+
+if word_1 != word_2:
+    print(anagrama(word_1, word_2))
+else:
+    print("Las palabras son iguales, así que no sonn anagrams")
